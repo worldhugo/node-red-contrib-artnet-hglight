@@ -121,7 +121,7 @@ module.exports = function (RED) {
             var duration = parseInt(payload.duration || 0);
 
             node.universe = payload.universe || config.universe || 0;
-            node.client.UNIVERSE = [node.universe, 0];
+            node.client.UNIVERSE = [parseInt(node.universe), 0];
 
             if (payload.start_buckets && Array.isArray(payload.start_buckets)) {
                 for (var i = 0; i < payload.start_buckets.length; i++) {
@@ -364,5 +364,5 @@ module.exports = function (RED) {
         }
     }
 
-    RED.nodes.registerType("artnet out", ArtnetOutNode);
+    RED.nodes.registerType("artnet out hglight", ArtnetOutNode);
 };

@@ -1,5 +1,5 @@
 {
-    "name"          : "node-red-contrib-artnet",
+    "name"          : "node-red-contrib-artnet-hglight",
     "version"       : "0.0.1",
     "description"   : "Node-RED node that controls lights via artnet",
     "dependencies"  : {
