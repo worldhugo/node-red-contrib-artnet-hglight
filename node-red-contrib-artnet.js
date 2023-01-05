@@ -10,7 +10,7 @@ const DEFAULT_MOVING_HEAD_CONFIG = {
 };
 
 module.exports = function (RED) {
-    function ArtnetOutNode(config) {
+    function ArtnetOutNodeHGLight(config) {
         RED.nodes.createNode(this, config);
         this.flowContext = this.context().global;
 
@@ -364,5 +364,5 @@ module.exports = function (RED) {
         }
     }
 
-    RED.nodes.registerType("artnet out hglight", ArtnetOutNode);
+    RED.nodes.registerType("artnet out hglight", ArtnetOutNodeHGLight);
 };
